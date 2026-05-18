@@ -1,0 +1,225 @@
+hugoblox:
+  schema: "2.0"
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # IDENTITY
+  # ────────────────────────────────────────────────────────────────────────────
+  identity:
+    name: "Shashank Obla"
+    organization: "Carnegie Mellon University"
+    type: person
+    tagline: "PhD Candidate in Electrical and Computer Engineering"
+    description: "Webpage of Shashank Obla, PhD Candidate at Carnegie Mellon University"
+    social:
+      twitter: ""
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # THEME
+  # ────────────────────────────────────────────────────────────────────────────
+  theme:
+    mode: system
+    pack: "default"
+    colors:
+      primary: "#009688"   # Teal (matching the original MkDocs Material palette)
+      secondary: "#00BCD4" # Cyan accent
+      neutral: ""
+    colors_light: {}
+    colors_dark: {}
+    surfaces:
+      background: ""
+      foreground: ""
+      header:
+        background: ""
+        foreground: ""
+      footer:
+        background: ""
+        foreground: ""
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # TYPOGRAPHY
+  # ────────────────────────────────────────────────────────────────────────────
+  typography:
+    pack: "academic"
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # LAYOUT
+  # ────────────────────────────────────────────────────────────────────────────
+  layout:
+    radius: "md"
+    spacing: "spacious"
+    avatar_shape: circle
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # HEADER
+  # ────────────────────────────────────────────────────────────────────────────
+  header:
+    enable: true
+    style: navbar
+    sticky: true
+    align: center
+    search: true
+    theme_toggle: true
+    theme_picker: true
+    language_switcher: false
+    cta:
+      enable: false
+      text: ""
+      url: ""
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # FOOTER
+  # ────────────────────────────────────────────────────────────────────────────
+  footer:
+    style: minimal
+    language_switcher: false
+    text: ""
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # COPYRIGHT
+  # ────────────────────────────────────────────────────────────────────────────
+  copyright:
+    notice: "© 2018–{year} Shashank Obla"
+    license:
+      type: custom
+      allow_derivatives: false
+      share_alike: false
+      allow_commercial: false
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # SEO
+  # ────────────────────────────────────────────────────────────────────────────
+  seo:
+    title: "Shashank's Webpage"
+    location:
+      address:
+        street: "5000 Forbes Avenue"
+        city: "Pittsburgh"
+        region: "PA"
+        postal_code: "15213"
+        country: "US"
+      coordinates:
+        latitude: null
+        longitude: null
+      phone: ""
+    ai:
+      allow:
+        - /
+      disallow: []
+      note: ""
+      contact: ""
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # CONTENT
+  # ────────────────────────────────────────────────────────────────────────────
+  content:
+    math:
+      enable: false
+    toc:
+      enable: true
+    reading_time:
+      enable: true
+    citations:
+      style: apa
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # SEARCH
+  # ────────────────────────────────────────────────────────────────────────────
+  search:
+    enable: true
+    suggestions: []
+    quick_actions: []
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # COMMENTS
+  # ────────────────────────────────────────────────────────────────────────────
+  comments:
+    enable: false
+    provider: ""
+    giscus:
+      repo: ""
+      repo_id: ""
+      category: ""
+      category_id: ""
+    disqus:
+      shortname: ""
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # ANALYTICS
+  # ────────────────────────────────────────────────────────────────────────────
+  analytics:
+    google:
+      measurement_id: "G-YYCNHNENMQ"
+    google_tag_manager:
+      container_id: ""
+    plausible:
+      domain: ""
+    fathom:
+      site_id: ""
+    pirsch:
+      site_id: ""
+    clarity:
+      project_id: ""
+    baidu:
+      site_id: ""
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # VERIFICATION
+  # ────────────────────────────────────────────────────────────────────────────
+  verification:
+    google: ""
+    bing: ""
+    baidu: ""
+    yandex: ""
+    pinterest: ""
+    naver: ""
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # REPOSITORY
+  # ────────────────────────────────────────────────────────────────────────────
+  repository:
+    enable: false
+    url: "https://github.com/ShashankOV/website"
+    branch: hugo-blox
+    content_dir: content
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # LOCALE
+  # ────────────────────────────────────────────────────────────────────────────
+  locale:
+    date_format: "Jan 2, 2006"
+    time_format: "3:04 PM"
+    address_format: en-us
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # SECURITY
+  # ────────────────────────────────────────────────────────────────────────────
+  security:
+    csp:
+      policy: ""
+      report_only: false
+    frame_options: allow
+    permissions_policy: ""
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # PRIVACY
+  # ────────────────────────────────────────────────────────────────────────────
+  privacy:
+    enable: false
+    anonymize_analytics: true
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # DEBUG
+  # ────────────────────────────────────────────────────────────────────────────
+  debug:
+    enable: false
+    hud:
+      position: bottom-left
+      opacity: 1.0
+    export_logs: true
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # PREMIUM
+  # ────────────────────────────────────────────────────────────────────────────
+  pro:
+    hide_attribution: false
+    affiliate_code: ""

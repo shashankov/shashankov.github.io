@@ -1,0 +1,23 @@
+# Hugo output
+public/
+resources/_gen/
+
+# Node
+node_modules/
+.pnpm-store/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python venv (legacy)
+venv/
+
+# Hugo module cache
+_vendor/
+
+# IDE
+.idea/
+
+# Pagefind
+pagefind/

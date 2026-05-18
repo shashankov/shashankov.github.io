@@ -1,7 +1,6 @@
 ---
 title: Resume
-summary: Shashank Obla's Resume
-type: page
+description: Shashank Obla's Resume
 ---
 
 <embed src="/uploads/resume.pdf" type="application/pdf" width="100%" height="1000px" />

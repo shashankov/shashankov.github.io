@@ -1,7 +1,6 @@
 ---
 title: Bio
-summary: About Shashank Obla — research interests, work experience, and hobbies
-type: page
+description: About Shashank Obla — research interests, work experience, and hobbies
 ---
 
 ## Research
@@ -14,7 +13,7 @@ I also worked with [Prof. Maryam Baghini](https://www.ee.iitb.ac.in/wiki/faculty
 
 ## Internship and Work Experience
 
-After my third year at IIT Bombay, I did an internship at the University of Tokyo with [Prof. Reiji Suda](http://olab.is.s.u-tokyo.ac.jp/~reiji/) in his HPC Lab, where I worked with three major domains in numerical computation: GPU acceleration and coding using CUDA, multi-processor programming using openMP, and distributed computing using MPI. In my second year, I worked with the [IIT Bombay Racing](https://www.iitbracing.org/) team in the Data Acquisition sub-division within the Electrical division. The team designs electric racecars to participate in the Formula Student competition and our subdivision and was involved in developing the first CAN network for the team, and implementing the wireless telemetry.
+After my third year at IIT Bombay, I did an internship at the University of Tokyo with [Prof. Reiji Suda](http://olab.is.s.u-tokyo.ac.jp/~reiji/) in his HPC Lab, where I worked with three major domains in numerical computation: GPU acceleration and coding using CUDA, multi-processor programming using openMP, and distributed computing using MPI. In my second year, I worked with the [IIT Bombay Racing](https://www.iitbracing.org/) team in the Data Acquisition sub-division within the Electrical division. The team designs electric racecars to participate in the Formula Student competition and our subdivision was involved in developing the first CAN network for the team, and implementing the wireless telemetry.
 
 ## Miscellaneous
 

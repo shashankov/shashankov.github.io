@@ -1,7 +1,6 @@
 ---
 title: Ethics
-summary: Personal ethics — a must read by Prof. H. Narayanan
-type: page
+description: Personal ethics — a must read by Prof. H. Narayanan
 ---
 
 A must read (though a rather long piece) on personal ethics by [Prof. H. Narayanan](https://www.ee.iitb.ac.in/~hn)...

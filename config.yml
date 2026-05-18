@@ -1,0 +1,109 @@
+baseURL: "https://www.andrew.cmu.edu/user/sobla/"
+title: Shashank Obla
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+pagination:
+  pagerSize: 20
+
+taxonomies:
+  tag: tags
+
+menu:
+  main:
+    - name: Bio
+      url: bio/
+      weight: 1
+    - name: Teaching
+      url: teaching/
+      weight: 2
+    - name: Projects
+      url: projects/
+      weight: 3
+    - name: Resume
+      url: resume/
+      weight: 4
+    - name: Contact
+      url: contact/
+      weight: 5
+
+params:
+  description: "Webpage of Shashank Obla, PhD Candidate in Electrical and Computer Engineering at Carnegie Mellon University."
+  author: Shashank Obla
+  googleAnalyticsID: "G-YYCNHNENMQ"
+  DateFormat: "January 2006"
+  defaultTheme: light
+  hideFooter: false
+  disableThemeToggle: true
+  ShowShareButtons: false
+  ShowReadingTime: false
+  disableSpecial1stPost: true
+  disableAnchoredHeadings: true
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowAllPagesInArchive: false
+  MainSections: ["bio", "teaching", "projects"]
+  ShowToc: false
+  disableScrollToTop: true
+  TocOpen: false
+  ShowWordCount: false
+  UseHugoToc: true
+  comments: false
+  math: false
+
+  profileMode:
+    enabled: true
+    title: Shashank Obla
+    subtitle: |
+      I am a PhD Candidate in the [ECE Department](https://www.ece.cmu.edu/) at [Carnegie Mellon University](https://www.cmu.edu/), advised by [Prof. James Hoe](http://users.ece.cmu.edu/~jhoe/doku/doku.php). My research is in **reconfigurable computing at datacenter scale**, as part of the [Crossroads FPGA Center](https://www.crossroadsfpga.org). I am also affiliated with [CALCM](https://research.ece.cmu.edu/~calcm/doku.php).
+    imageUrl: "picture.jpeg"
+    imageWidth: 160
+    imageHeight: 160
+    imageTitle: Shashank Obla
+    buttons:
+      - name: Bio
+        url: bio/
+      - name: Teaching
+        url: teaching/
+      - name: Projects
+        url: projects/
+      - name: Resume
+        url: resume/
+      - name: Contact
+        url: contact/
+
+  socialIcons:
+    - name: Email
+      url: "mailto:shashankov@cmu.edu"
+    - name: GitHub
+      url: "https://github.com/ShashankOV"
+    - name: LinkedIn
+      url: "https://www.linkedin.com/in/shashankov"
+    - name: Twitter
+      url: "https://twitter.com/Shashank_OV"
+    - name: CV
+      url: "uploads/resume.pdf"
+
+  assets:
+    disableScrollBarStyle: true
+  cover:
+    hiddenInList: false
+    hiddenInSingle: true
+  label:
+    text: "Shashank Obla"
+    icon: favicon.ico
+    iconHeight: 18
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    guessSyntax: true
+    style: autumn
+  tableOfContents:
+    endLevel: 2
+    ordered: false
+    startLevel: 2

@@ -1,7 +1,6 @@
 ---
 title: Projects
-summary: Research and personal projects
-type: page
+description: Research and personal projects by Shashank Obla
 ---
 
 Projects [^1]

@@ -1,7 +1,6 @@
 ---
 title: Token System
-summary: A queue-based allocation system for handling student requests in FCFS order
-type: page
+description: A queue-based allocation system for handling student requests in FCFS order
 tags:
   - Python
   - Google Forms

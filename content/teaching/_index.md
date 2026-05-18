@@ -1,7 +1,6 @@
 ---
 title: Teaching Assistantships
-summary: Graduate teaching assistantships at CMU and IIT Bombay
-type: page
+description: Graduate teaching assistantships at CMU and IIT Bombay
 ---
 
 Apart from research, I'm also passionate about teaching and I consider my Teaching Assistantships very important in achieving my goals.
@@ -37,3 +36,8 @@ I was a TA for the RF Microelectronics course in the Spring semester. The course
 I was also nominated for the Excellence in Teaching Assistantship for this course.
 
 ![Excellence in TA Certificate (RF)](/uploads/TA_Excellence_2.png)
+
+---
+
+- [Miscellaneous Teaching Resources](misc/)
+- [On Education – Einstein](ethics/)

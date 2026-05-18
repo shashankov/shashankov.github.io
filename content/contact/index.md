@@ -1,10 +1,9 @@
 ---
 title: Contact Information
-summary: How to reach Shashank Obla
-type: page
+description: How to reach Shashank Obla
 ---
 
-You can find all my social links at the bottom of the webpage.
+You can find all my social links at the bottom of the homepage.
 
 > Mobile: [+1 412-708-7719](tel:+14127087719)
 > Email: [shashankov@cmu.edu](mailto:shashankov@cmu.edu)

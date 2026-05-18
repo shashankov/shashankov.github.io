@@ -1,23 +1,14 @@
 # Hugo output
 public/
-resources/_gen/
-
-# Node
-node_modules/
-.pnpm-store/
+resources/
 
 # OS files
 .DS_Store
 Thumbs.db
 
-# Python venv (legacy)
-venv/
-
-# Hugo module cache
-_vendor/
+# Hugo build lock
+.hugo_build.lock
 
 # IDE
 .idea/
-
-# Pagefind
-pagefind/
+.vscode/

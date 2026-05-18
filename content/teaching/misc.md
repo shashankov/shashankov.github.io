@@ -1,7 +1,6 @@
 ---
 title: Miscellaneous Resources
-summary: Inspiring teaching resources and advice
-type: page
+description: Inspiring teaching resources and advice
 ---
 
 Here are some resources/advice I've come across which I found very inspiring and worth sharing!

@@ -61,4 +61,55 @@
         {{- end }}
     </div>
     {{- end}}
+    
+    <!-- Bouncing scroll down arrow pointing to content -->
+    <div class="scroll-down-arrow">
+        <a href="#home-content" aria-label="Scroll down">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<!-- Main homepage content container below the profile hero screen -->
+<div id="home-content" class="home-content-container">
+    <!-- Render Selected Publications dynamically from your main publications -->
+    {{- $selected_pubs := where (where site.RegularPages "Section" "publications") "Params.selected" true }}
+    {{- if $selected_pubs }}
+    <div class="alfolio-section home-selected-publications" style="margin-top: 0; border-top: none; padding-top: 0;">
+        <h3 class="alfolio-section-title">Selected Publications</h3>
+        <hr class="alfolio-divider">
+        {{- range $selected_pubs }}
+        <div class="alfolio-entry">
+            <div class="alfolio-body">
+                <div class="alfolio-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+                {{- if .Params.authors }}
+                <div class="alfolio-authors">
+                    {{- range $i, $a := .Params.authors -}}
+                        {{- if $i }}, {{ end -}}
+                        {{- if eq $a "Shashank Obla" }}<strong>{{ $a }}</strong>{{- else }}{{ $a }}{{- end -}}
+                    {{- end -}}
+                </div>
+                {{- end }}
+                {{- if .Params.description }}
+                <div class="alfolio-venue">{{ .Params.description }}</div>
+                {{- end }}
+                <div class="alfolio-links" style="pointer-events: auto;">
+                    {{ partial "pub_links.html" . }}
+                </div>
+            </div>
+            <div class="alfolio-year">
+                {{- if not .Date.IsZero -}}{{ .Date.Format "2006" }}{{- end -}}
+            </div>
+        </div>
+        <hr class="alfolio-divider">
+        {{- end }}
+        
+        <!-- View All Publications button link -->
+        <div class="view-all-publications" style="margin-top: 2rem; text-align: center;">
+            <a href="{{ "publications/" | relURL }}" class="pub-btn-view-all">View All Publications &rarr;</a>
+        </div>
+    </div>
+    {{- end }}
 </div>

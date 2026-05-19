@@ -178,3 +178,108 @@
     background-color: #334155;
     color: #f8fafc !important;
 }
+
+/* ============================================
+   Homepage profile override, arrow, and bio
+   ============================================ */
+html {
+    scroll-behavior: smooth;
+}
+
+.profile {
+    min-height: calc(100vh - 60px); /* Fill the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+}
+
+.profile_inner {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Bouncing scroll arrow styling */
+.scroll-down-arrow {
+    margin-top: auto;
+    text-align: center;
+    z-index: 10;
+    padding-top: 1.5rem;
+}
+
+.scroll-down-arrow svg {
+    color: var(--secondary);
+    transition: color 0.3s ease, transform 0.2s ease;
+    animation: bounce 2s infinite;
+}
+
+.scroll-down-arrow a:hover svg {
+    color: var(--primary);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-8px);
+    }
+    60% {
+        transform: translateY(-4px);
+    }
+}
+
+/* Homepage main content section */
+.home-content-container {
+    max-width: var(--main-width);
+    margin: 0 auto;
+    padding: 2rem 15px 4rem 15px;
+}
+
+.home-bio-section {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--primary);
+}
+
+.home-bio-section a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.home-bio-section a:hover {
+    color: var(--primary);
+    opacity: 0.8;
+}
+
+/* Selected publications specific layout adjustments */
+.home-selected-publications {
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+}
+
+/* Outlined CTA button for viewing all publications */
+.pub-btn-view-all {
+    display: inline-block;
+    padding: 8px 22px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    transition: all 0.2s ease;
+    background: transparent;
+    color: var(--secondary) !important;
+}
+
+.pub-btn-view-all:hover {
+    background-color: var(--primary);
+    color: var(--theme) !important;
+    border-color: var(--primary);
+}
+

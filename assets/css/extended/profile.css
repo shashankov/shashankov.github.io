@@ -76,11 +76,6 @@
     /* amber glow so it's visible in dark mode */
 }
 
-/* Justify text on the front page and center the last line */
-.profile-content p, .profile-content div {
-    text-align: justify;
-    text-align-last: center;
-}
 
 /* Reduce heading and subheading sizes across all non-homepage pages */
 .page-header h1 {

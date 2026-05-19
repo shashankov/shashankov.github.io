@@ -43,7 +43,7 @@
         {{- with .buttons }}
         <div class="buttons">
             {{- range . }}
-            <a class="button" href="{{ trim .url " " | relURL }}" rel="noopener" title="{{ .name }}">
+            <a class="button" href="{{ strings.TrimPrefix "/" (trim .url " ") | relURL }}" rel="noopener" title="{{ .name }}">
                 <span class="button-inner">
                     {{ .name }}
                     {{- if (findRE "://" .url) }}&nbsp;

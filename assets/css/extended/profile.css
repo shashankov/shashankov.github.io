@@ -9,3 +9,32 @@
 .buttons {
     max-width: 800px; /* Increase width for buttons to prevent early wrapping */
 }
+
+/* Make links within content more visible */
+.post-content a,
+.profile-content a,
+.profile_inner span a {
+    color: #1e3a8a; /* dark blue */
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.post-content a:hover,
+.profile-content a:hover,
+.profile_inner span a:hover {
+    color: #1e40af; /* slightly brighter dark blue on hover */
+}
+
+/* Dark mode adjustments for links */
+[data-theme="dark"] .post-content a,
+[data-theme="dark"] .profile-content a,
+[data-theme="dark"] .profile_inner span a {
+    color: #5c8cbc; /* subdued, slightly dark blue for dark mode */
+}
+
+[data-theme="dark"] .post-content a:hover,
+[data-theme="dark"] .profile-content a:hover,
+[data-theme="dark"] .profile_inner span a:hover {
+    color: #7ba8d6; /* slightly lighter on hover */
+}

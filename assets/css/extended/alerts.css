@@ -5,60 +5,70 @@
     margin-bottom: 1.5rem;
     font-size: 0.95em;
     border: 1px solid transparent;
+    border-left: 4px solid transparent;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
 /* Info (Muted Slate/Blue) */
 .alert-info {
-    background-color: #f8fafc;
-    border-color: #e2e8f0;
-    color: #475569;
+    background-color: #e0f2fe;
+    border-color: #bae6fd;
+    border-left-color: #0284c7;
+    color: #075985;
 }
 
 /* Success (Muted Sage Green) */
 .alert-success {
-    background-color: #f5fbf7;
-    border-color: #d1e8da;
-    color: #3b5a45;
+    background-color: #dcfce7;
+    border-color: #bbf7d0;
+    border-left-color: #16a34a;
+    color: #166534;
 }
 
 /* Warning (Muted Sand/Amber) */
 .alert-warning {
-    background-color: #fdfaf5;
-    border-color: #ede4d3;
-    color: #755f36;
+    background-color: #fef3c7;
+    border-color: #fde68a;
+    border-left-color: #d97706;
+    color: #92400e;
 }
 
 /* Danger (Muted Rose/Red) */
 .alert-danger {
-    background-color: #fcf5f5;
-    border-color: #ead7d7;
-    color: #7a4646;
+    background-color: #fee2e2;
+    border-color: #fecaca;
+    border-left-color: #dc2626;
+    color: #991b1b;
 }
 
 /* -----------------------------
    Dark Mode Adjustments 
 ----------------------------- */
 [data-theme="dark"] .alert-info {
-    background-color: rgba(148, 163, 184, 0.05);
-    border-color: rgba(148, 163, 184, 0.15);
+    background-color: rgba(148, 163, 184, 0.12);
+    border-color: rgba(148, 163, 184, 0.25);
+    border-left-color: rgba(148, 163, 184, 0.5);
     color: #94a3b8;
 }
 
 [data-theme="dark"] .alert-success {
-    background-color: rgba(134, 176, 147, 0.05);
-    border-color: rgba(134, 176, 147, 0.15);
+    background-color: rgba(134, 176, 147, 0.12);
+    border-color: rgba(134, 176, 147, 0.25);
+    border-left-color: rgba(134, 176, 147, 0.5);
     color: #86b093;
 }
 
 [data-theme="dark"] .alert-warning {
-    background-color: rgba(201, 175, 117, 0.05);
-    border-color: rgba(201, 175, 117, 0.15);
+    background-color: rgba(201, 175, 117, 0.12);
+    border-color: rgba(201, 175, 117, 0.25);
+    border-left-color: rgba(201, 175, 117, 0.5);
     color: #c9af75;
 }
 
 [data-theme="dark"] .alert-danger {
-    background-color: rgba(196, 135, 135, 0.05);
-    border-color: rgba(196, 135, 135, 0.15);
+    background-color: rgba(196, 135, 135, 0.12);
+    border-color: rgba(196, 135, 135, 0.25);
+    border-left-color: rgba(196, 135, 135, 0.5);
     color: #c48787;
 }
 

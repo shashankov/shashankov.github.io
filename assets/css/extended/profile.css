@@ -1,6 +1,7 @@
 :root {
     --main-width: 960px;
     /* Increase overall content width */
+    --theme: rgb(245, 245, 245); /* Set global background to light gray in light mode */
 }
 
 .profile_inner img {

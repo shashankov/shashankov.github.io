@@ -145,10 +145,12 @@
       <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
     </div>
     {{- end }}
-    {{- if eq .Section "publications" }}
+    {{- if or (eq .Section "publications") (eq .Section "projects") }}
     <div
       style="position: relative; z-index: 2; margin-top: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; pointer-events: none;">
-      {{ partial "pub_links.html" . }}
+      <div class="{{- if eq .Section "projects" }}alfolio-links project-links{{- else }}alfolio-links{{- end }}" style="pointer-events: auto;">
+        {{ partial "pub_links.html" . }}
+      </div>
       <div style="font-size: 0.9em; color: var(--secondary);">
         {{- if not .Date.IsZero -}}
         {{ .Date.Format (default "January 2006" site.Params.DateFormat) }}
@@ -156,7 +158,7 @@
       </div>
     </div>
     {{- end }}
-    {{- if and (not (.Param "hideMeta")) (ne .Section "publications") }}
+    {{- if and (not (.Param "hideMeta")) (and (ne .Section "publications") (ne .Section "projects")) }}
     <footer class="entry-footer">
       {{- partial "post_meta.html" . -}}
     </footer>

@@ -40,7 +40,7 @@
   {{- partial "toc.html" . }}
   {{- end }}
 
-  {{- if eq .Section "publications" }}
+  {{- if or (eq .Section "publications") (eq .Section "projects") }}
   <div class="pub-single-links">
     {{ partial "pub_links.html" . }}
   </div>

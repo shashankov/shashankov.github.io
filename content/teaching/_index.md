@@ -13,7 +13,7 @@ Apart from research, I'm also passionate about teaching and I consider my Teachi
   <span>Fall 2022</span>
 </div>
 
-The first iteration of the one-of-a-kind course in helping PhD students applying queuing theory to their own research work. As a TA, I worked closely with student is helping them formulate their research ideas and problems in queuing theory terms and using the rich queuing literature to come up with solutions.
+The first iteration of the one-of-a-kind course in helping PhD students apply queuing theory to their own research work. As a TA, I worked closely with students to help them formulate their research ideas and problems in queuing theory terms and using the rich queuing literature to come up with solutions.
 
 ### [Reconfigurable Logic: Technology, Architecture, and Applications](https://users.ece.cmu.edu/~jhoe/doku/doku.php?id=18-643_reconfigurable_logic)
 <div style="display: flex; justify-content: space-between; font-style: italic; margin-bottom: 1rem;">
@@ -23,7 +23,7 @@ The first iteration of the one-of-a-kind course in helping PhD students applying
 
 This was a wonderful experience for me since I was the sole TA which allowed me to be more involved in the course. I revamped the course recitations and lab walkthroughs for the course and also had the opportunity to lecture on the topic of using OpenCL based HLS for FPGAs and Partial Reconfiguration.
 
-For the 2022 iteration of the course, I worked on porting the Ultra96v2 platform to be DFX capable, allowing the students to use Partial Reconfiguration directly from their Vitis applications. We updated the labs to allow students to exploit this new ability to further enhance the performance of their applications. We also introduced a new lab experiment for the course, using Intel OpenCL for FPGAs on the Intel DevCloud platform, which I helped developed over the summer and handles the necessary backend and scripting to make it a smooth experience for the students.
+For the 2022 iteration of the course, I worked on porting the Ultra96v2 platform to be DFX capable, allowing the students to use Partial Reconfiguration directly from their Vitis applications. We updated the labs to allow students to exploit this new ability to further enhance the performance of their applications. We also introduced a new lab experiment for the course, using Intel OpenCL for FPGAs on the Intel DevCloud platform, which I helped develop over the summer and handles the necessary backend and scripting to make it a smooth experience for the students.
 
 ## Graduate Teaching Assistantships at IIT Bombay
 
@@ -33,7 +33,7 @@ For the 2022 iteration of the course, I worked on porting the Ultra96v2 platform
   <span>Fall 2018</span>
 </div>
 
-In this course, I was a part of the team of 7 TAs for a class of around 140 students. The course deals with topics ranging from basic CMOS physics and theory to designing Operational Amplifiers and Filters. Through this, I got an opportunity to take tutorial sessions, set assignments, grade examinations, take vivas and most importantly interact with students to clear their doubts and difficulties. It was during this engagement that I developed the [Token System](/projects/token-system/).
+In this course, I was a part of the team of 7 TAs for a class of around 140 students. The course deals with topics ranging from basic CMOS physics and theory to designing Operational Amplifiers and Filters. Through this, I got an opportunity to take tutorial sessions, set assignments, grade examinations, conduct vivas and most importantly interact with students to clear their doubts and difficulties. It was during this engagement that I developed the [Token System](/projects/token-system/).
 
 The assignment was an ambitious project for me. I chose to deconstruct a research paper with the goal that I wanted to make an assignment which I would've enjoyed doing! You can find the assignment [here](../uploads/teaching/Assignment_2.pdf).
 

@@ -5,9 +5,10 @@ tags:
   - Python
   - Google Forms
   - Teaching Tools
+code: "https://github.com/ShashankOV/Token-System"
 ---
 
-The token system implements a queue based allocation system for handling customers with requests in a [FCFS](https://en.wikipedia.org/wiki/Scheduling_(computing)#First_come,_first_served) (First Come, First Served) manner. The motivation behind this code was to streamline the Answer Sheet Grading doubt session or, as it is called here in IIT Bombay, the `"Crib Session"`, for the course in which I am a Teaching Assistant.
+The token system implements a queue-based allocation system for handling customers with requests in a [FCFS](https://en.wikipedia.org/wiki/Scheduling_(computing)#First_come,_first_served) (First Come, First Served) manner. The motivation behind this code was to streamline the answer sheet grading doubt session or, as it is called here in IIT Bombay, the `"Crib Session"`, for the course in which I am a Teaching Assistant.
 
 ## Dependencies
 
@@ -116,8 +117,8 @@ Here we present the breakdown of the configuration file and its constituents. It
 ### Line Format
 
 Each line consisting of data has two parts:
-* The part before `: ` which is for readability and is ignored
-* The part after `: ` which is the actual data which is read
+* The part before `: ` is for readability and is ignored
+* The part after `: ` is the actual data which is read
 
 > **Note:** The space after the `:` is important and if absent will prevent data from being read.
 

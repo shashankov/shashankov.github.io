@@ -187,7 +187,8 @@ html {
 }
 
 .profile {
-    min-height: calc(100vh - 60px); /* Fill the screen */
+    min-height: calc(100vh - 60px);
+    /* Fill the screen */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,12 +221,19 @@ html {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateY(0);
     }
+
     40% {
         transform: translateY(-8px);
     }
+
     60% {
         transform: translateY(-4px);
     }
@@ -281,5 +289,23 @@ html {
     background-color: var(--primary);
     color: var(--theme) !important;
     border-color: var(--primary);
+}
+
+/* ============================================
+   Standout Styling for Projects Page Code Button (Dark Theme Only)
+   ============================================ */
+
+[data-theme="dark"] .project-links .pub-links .pub-btn-code,
+[data-theme="dark"] .project-links .pub-links .pub-btn-stl {
+    background-color: #424247; /* Slightly lighter solid grey for outstanding card contrast */
+    border-color: #7a7a80; /* A clearly defined lighter border */
+    color: #ffffff !important; /* Premium high-contrast white text */
+}
+
+[data-theme="dark"] .project-links .pub-links .pub-btn-code:hover,
+[data-theme="dark"] .project-links .pub-links .pub-btn-stl:hover {
+    background-color: #55555c; /* Even lighter grey highlight on hover */
+    border-color: #9b9ba2;
+    color: #ffffff !important;
 }
 

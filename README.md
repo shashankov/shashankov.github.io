@@ -48,8 +48,7 @@ hugo server --baseURL http://localhost:1313/
 │   ├── projects/           # Projects section
 │   ├── publications/       # Publications section (individual Markdown files)
 │   ├── service/            # Service & community involvement page
-│   ├── resume/index.md     # Resume page (embeds PDF)
-│   └── contact/index.md    # Contact page + calendar
+│   └── resume/index.md     # Resume page (embeds PDF)
 ├── static/
 │   ├── picture.jpeg        # Profile photo
 │   └── uploads/            # PDFs, slides, and other media assets

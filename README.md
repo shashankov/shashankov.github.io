@@ -63,3 +63,21 @@ hugo --minify
 ```
 
 The output is in `public/`. Upload to Andrew FileSpace or any static host.
+
+## Custom Shortcodes (Alerts)
+
+This theme includes a custom shortcode for MkDocs-style colored admonitions/alerts. 
+You can use the `{{< alert >}}` shortcode in any Markdown file to draw attention to important text.
+
+There are four available types:
+- `info` (Blue, default)
+- `success` (Green)
+- `warning` (Yellow)
+- `danger` (Red)
+
+**Usage Example:**
+```markdown
+{{< alert type="info" >}}
+This is a standard informational note.
+{{< /alert >}}
+```

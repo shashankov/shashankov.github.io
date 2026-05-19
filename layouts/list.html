@@ -1,0 +1,195 @@
+{{- define "main" }}
+
+{{- if (and site.Params.profileMode.enabled .IsHome) }}
+{{- partial "index_profile.html" . }}
+{{- else }} {{/* if not profileMode */}}
+
+{{- if not .IsHome | and .Title }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>
+    {{ .Title }}
+    {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") }}
+    {{- with .OutputFormats.Get "rss" }}
+    <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+    {{- end }}
+    {{- end }}
+  </h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content md-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- $pages := union .RegularPages .Sections }}
+
+{{- if .IsHome }}
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
+{{- end }}
+
+{{- $paginator := .Paginate $pages }}
+
+{{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
+{{- partial "home_info.html" . }}
+{{- end }}
+
+{{- $term := .Data.Term }}
+
+{{- if eq .Section "publications" }}
+
+  {{- $selected := where $pages "Params.category" "!=" "other" }}
+  {{- if $selected }}
+  <div class="alfolio-section">
+    <h3 class="alfolio-section-title">Research Publications</h3>
+    <hr class="alfolio-divider">
+    {{- range $selected }}
+    <div class="alfolio-entry">
+      <div class="alfolio-body">
+        <div class="alfolio-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+        {{- if .Params.authors }}
+        <div class="alfolio-authors">{{ range $i, $a := .Params.authors }}{{- if $i }}, {{ end }}{{- if eq $a "Shashank Obla" }}<strong>{{ $a }}</strong>{{- else }}{{ $a }}{{- end }}{{- end }}</div>
+        {{- end }}
+        {{- if .Params.description }}
+        <div class="alfolio-venue">{{ .Params.description }}</div>
+        {{- end }}
+        <div class="alfolio-links" style="pointer-events: auto;">
+          {{ partial "pub_links.html" . }}
+        </div>
+      </div>
+      <div class="alfolio-year">
+        {{- if not .Date.IsZero -}}{{ .Date.Format "2006" }}{{- end -}}
+      </div>
+    </div>
+    <hr class="alfolio-divider">
+    {{- end }}
+  </div>
+  {{- end }}
+
+  {{- $other := where $pages "Params.category" "other" }}
+  {{- if $other }}
+  <div class="alfolio-section" style="margin-top: 2.5rem;">
+    <h3 class="alfolio-section-title">Other Projects & Preprints</h3>
+    <hr class="alfolio-divider">
+    {{- range $other }}
+    <div class="alfolio-entry">
+      <div class="alfolio-body">
+        <div class="alfolio-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+        {{- if .Params.authors }}
+        <div class="alfolio-authors">{{ range $i, $a := .Params.authors }}{{- if $i }}, {{ end }}{{- if eq $a "Shashank Obla" }}<strong>{{ $a }}</strong>{{- else }}{{ $a }}{{- end }}{{- end }}</div>
+        {{- end }}
+        {{- if .Params.description }}
+        <div class="alfolio-venue">{{ .Params.description }}</div>
+        {{- end }}
+        <div class="alfolio-links" style="pointer-events: auto;">
+          {{ partial "pub_links.html" . }}
+        </div>
+      </div>
+      <div class="alfolio-year">
+        {{- if not .Date.IsZero -}}{{ .Date.Format "2006" }}{{- end -}}
+      </div>
+    </div>
+    <hr class="alfolio-divider">
+    {{- end }}
+  </div>
+  {{- end }}
+
+{{- else }}
+
+  {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
+  {{- range $index, $page := $paginator.Pages }}
+  {{- $class := "post-entry" }}
+  {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
+  {{- $class = "first-entry" }}
+  {{- else if $term }}
+  {{- $class = "post-entry tag-entry" }}
+  {{- end }}
+  <article class="{{ $class }}{{- if eq .Section "publications" }} pub-entry{{- end }}">
+    {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+    {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+    <header class="entry-header">
+      <h2 class="entry-hint-parent" {{- if eq .Section "publications" }} style="font-size: 1.25rem;" {{- end }}>
+        {{- .Title }}
+        {{- if .Draft }}
+        <span class="entry-hint" title="Draft">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+            <path
+              d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+          </svg>
+        </span>
+        {{- end }}
+      </h2>
+      {{- if .Params.subtitle }}
+      <div style="font-weight: normal; font-size: 0.85em; margin-top: 4px; color: var(--secondary);">{{ .Params.subtitle }}</div>
+      {{- end }}
+    </header>
+    {{- if and (ne (.Param "hideSummary") true) (ne .Section "publications") }}
+    <div class="entry-content">
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    {{- end }}
+    {{- if eq .Section "publications" }}
+    <div
+      style="position: relative; z-index: 2; margin-top: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; pointer-events: none;">
+      {{ partial "pub_links.html" . }}
+      <div style="font-size: 0.9em; color: var(--secondary);">
+        {{- if not .Date.IsZero -}}
+        {{ .Date.Format (default "January 2006" site.Params.DateFormat) }}
+        {{- end -}}
+      </div>
+    </div>
+    {{- end }}
+    {{- if and (not (.Param "hideMeta")) (ne .Section "publications") }}
+    <footer class="entry-footer">
+      {{- partial "post_meta.html" . -}}
+    </footer>
+    {{- end }}
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end }}
+
+{{- end }}
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+      «&nbsp;{{ i18n "prev_page" }}&nbsp;
+      {{- if (.Param "ShowPageNums") }}
+      {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}
+      {{- end }}
+    </a>
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+      {{- i18n "next_page" }}&nbsp;
+      {{- if (.Param "ShowPageNums") }}
+      {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}
+      {{- end }}&nbsp;»
+    </a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
+{{- end }}{{/* end profileMode */}}
+
+{{- end }}{{- /* end main */ -}}

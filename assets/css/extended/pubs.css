@@ -1,19 +1,148 @@
-/* Publication Buttons Container */
-.pub-links {
+/* ============================================
+   Al-Folio inspired publications styling
+   ============================================ */
+
+/* Darker borders/lines in light theme only */
+:root:not([data-theme="dark"]) {
+    --border: rgb(170, 170, 170);
+}
+
+/* Section title */
+.alfolio-section-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem 0;
+    color: var(--primary);
+}
+
+/* Thin horizontal divider */
+.alfolio-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 0;
+}
+
+/* Each publication entry row */
+.alfolio-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 16px 0;
+}
+
+/* Body: title + venue + links */
+.alfolio-body {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Title as a simple link */
+.alfolio-title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 2px;
+}
+
+.alfolio-title a {
+    color: var(--primary);
+    text-decoration: none;
+    box-shadow: none !important;
+}
+
+.alfolio-title a:hover {
+    text-decoration: underline;
+}
+
+/* Venue / description line */
+.alfolio-venue {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    font-style: italic;
+    margin-bottom: 6px;
+}
+
+/* Authors line */
+.alfolio-authors {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    margin-bottom: 2px;
+    line-height: 1.5;
+}
+
+/* Links row */
+.alfolio-links .pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 6px 0 0 0;
+    pointer-events: auto;
+}
+
+/* Al-folio style: small outlined buttons */
+.alfolio-links .pub-links .pub-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.72rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    transition: all 0.15s ease;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--secondary) !important;
+}
+
+.alfolio-links .pub-links .pub-btn:hover {
+    background-color: var(--primary);
+    color: var(--theme) !important;
+    border-color: var(--primary);
+}
+
+.alfolio-links .pub-links .pub-btn svg {
+    width: 11px;
+    height: 11px;
+}
+
+/* Year column — large, light, right-aligned */
+.alfolio-year {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--secondary);
+    opacity: 0.5;
+    white-space: nowrap;
+    flex-shrink: 0;
+    line-height: 1;
+    padding-top: 2px;
+}
+
+/* ============================================
+   Single publication detail page buttons
+   ============================================ */
+.pub-single-links {
+    margin: 1.2rem 0;
+}
+
+.pub-single-links .pub-links {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 15px 0 25px 0;
+    margin: 0;
 }
 
-/* Base button styling */
-.pub-links .pub-btn {
+.pub-single-links .pub-links .pub-btn {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    padding: 6px 14px;
+    padding: 8px 18px;
     border-radius: 6px;
-    font-size: 0.85rem;
+    font-size: 0.88rem;
     font-weight: 600;
     text-decoration: none !important;
     box-shadow: none !important;
@@ -21,30 +150,31 @@
     border: 1px solid transparent;
 }
 
-.pub-links .pub-btn svg {
-    margin-top: -1px;
+.pub-single-links .pub-links .pub-btn svg {
+    width: 16px;
+    height: 16px;
 }
 
-/* Light mode colors */
-.pub-links .pub-btn {
+/* Light mode */
+.pub-single-links .pub-links .pub-btn {
     background-color: #f1f5f9;
     color: #334155 !important;
     border-color: #e2e8f0;
 }
 
-.pub-links .pub-btn:hover {
+.pub-single-links .pub-links .pub-btn:hover {
     background-color: #e2e8f0;
     color: #0f172a !important;
 }
 
-/* Dark mode colors */
-[data-theme="dark"] .pub-links .pub-btn {
+/* Dark mode */
+[data-theme="dark"] .pub-single-links .pub-links .pub-btn {
     background-color: #1e293b;
     color: #cbd5e1 !important;
     border-color: #334155;
 }
 
-[data-theme="dark"] .pub-links .pub-btn:hover {
+[data-theme="dark"] .pub-single-links .pub-links .pub-btn:hover {
     background-color: #334155;
     color: #f8fafc !important;
 }

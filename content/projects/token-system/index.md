@@ -7,8 +7,6 @@ tags:
   - Teaching Tools
 ---
 
-## Description
-
 The token system implements a queue based allocation system for handling customers with requests in a [FCFS](https://en.wikipedia.org/wiki/Scheduling_(computing)#First_come,_first_served) (First Come, First Served) manner. The motivation behind this code was to streamline the Answer Sheet Grading doubt session or, as it is called here in IIT Bombay, the `"Crib Session"`, for the course in which I am a Teaching Assistant.
 
 ## Dependencies

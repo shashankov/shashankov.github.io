@@ -1,4 +1,3 @@
-baseURL: "https://www.andrew.cmu.edu/user/sobla/"
 title: Shashank Obla
 theme: PaperMod
 
@@ -13,21 +12,25 @@ taxonomies:
 menu:
   main:
     - name: Bio
-      url: bio/
+      url: /bio/
       weight: 1
     - name: Teaching
-      url: teaching/
+      url: /teaching/
       weight: 2
     - name: Publications
-      url: publications/
+      url: /publications/
       weight: 3
     - name: Projects
-      url: projects/
+      url: /projects/
       weight: 4
+    - name: Service
+      url: /service/
+      weight: 5
 
 params:
   description: "Webpage of Shashank Obla, PhD Candidate in Electrical and Computer Engineering at Carnegie Mellon University."
   author: Shashank Obla
+  hideAuthor: true
   googleAnalyticsID: "G-YYCNHNENMQ"
   DateFormat: "January 2006"
   defaultTheme: dark
@@ -41,7 +44,7 @@ params:
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   ShowAllPagesInArchive: false
-  MainSections: ["bio", "teaching", "publications", "projects"]
+  MainSections: ["bio", "teaching", "publications", "projects", "service"]
   ShowToc: false
   disableScrollToTop: true
   TocOpen: false
@@ -60,17 +63,19 @@ params:
     imageTitle: Shashank Obla
     buttons:
       - name: Bio
-        url: bio/
+        url: /bio/
       - name: Teaching
-        url: teaching/
+        url: /teaching/
       - name: Publications
-        url: publications/
+        url: /publications/
       - name: Projects
-        url: projects/
+        url: /projects/
+      - name: Service
+        url: /service/
 
   socialIcons:
     - name: Email
-      url: "mailto:shashankov@cmu.edu"
+      url: "mailto:sobla@andrew.cmu.edu"
     - name: GitHub
       url: "https://github.com/ShashankOV"
     - name: LinkedIn

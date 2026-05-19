@@ -1,6 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
+subtitle: ""
 description: "Conference/Journal Name, Year"
 pdf: ""
 code: ""

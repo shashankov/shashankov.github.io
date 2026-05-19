@@ -1,5 +1,6 @@
 :root {
-    --main-width: 960px; /* Increase overall content width */
+    --main-width: 960px;
+    /* Increase overall content width */
 }
 
 .profile_inner img {
@@ -7,34 +8,70 @@
 }
 
 .buttons {
-    max-width: 800px; /* Increase width for buttons to prevent early wrapping */
+    max-width: 800px;
+    /* Increase width for buttons to prevent early wrapping */
 }
 
-/* Make links within content more visible */
+/* Make links within content more visible and consistent */
 .post-content a,
 .profile-content a,
-.profile_inner span a {
-    color: #1e3a8a; /* dark blue */
-    font-weight: bold;
-    text-decoration: none;
+.profile_inner span a,
+.entry-content a,
+.post-description a {
+    color: #1e3a8a !important; /* dark blue */
+    font-weight: bold !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
     transition: all 0.2s ease;
 }
 
 .post-content a:hover,
 .profile-content a:hover,
-.profile_inner span a:hover {
-    color: #1e40af; /* slightly brighter dark blue on hover */
+.profile_inner span a:hover,
+.entry-content a:hover,
+.post-description a:hover {
+    color: #1e40af !important; /* slightly brighter dark blue on hover */
 }
 
 /* Dark mode adjustments for links */
 [data-theme="dark"] .post-content a,
 [data-theme="dark"] .profile-content a,
-[data-theme="dark"] .profile_inner span a {
-    color: #5c8cbc; /* subdued, slightly dark blue for dark mode */
+[data-theme="dark"] .profile_inner span a,
+[data-theme="dark"] .entry-content a,
+[data-theme="dark"] .post-description a {
+    color: #5c8cbc !important; /* subdued, slightly dark blue for dark mode */
 }
 
 [data-theme="dark"] .post-content a:hover,
 [data-theme="dark"] .profile-content a:hover,
-[data-theme="dark"] .profile_inner span a:hover {
-    color: #7ba8d6; /* slightly lighter on hover */
+[data-theme="dark"] .profile_inner span a:hover,
+[data-theme="dark"] .entry-content a:hover,
+[data-theme="dark"] .post-description a:hover {
+    color: #7ba8d6 !important; /* slightly lighter on hover */
+}
+
+/* Job market emphasis box */
+.job-market-box {
+    background-color: #f0f9ff;
+    /* very subtle, clean light blue */
+    border: 1px solid #bae6fd;
+    /* soft blue border */
+    color: #0c4a6e;
+    /* deep blue text */
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 0.95em;
+    box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.1), 0 0 10px -1px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] .job-market-box {
+    background-color: rgba(245, 158, 11, 0.05);
+    /* barely visible background tint */
+    border: 1px solid rgba(245, 158, 11, 0.15);
+    /* very subtle border */
+    color: #d97706;
+    /* muted amber text */
+    box-shadow: 0 0 10px rgba(217, 119, 6, 0.15);
+    /* amber glow so it's visible in dark mode */
 }

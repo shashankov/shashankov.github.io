@@ -105,7 +105,7 @@ The responses of both the forms must be directed to a single spreadsheet in diff
 
 ## Configuration File
 
-Here we present the breakdown of the configuration file and its constituents. It is to be strictly named `configuration.inf`. A sample file can be found [here](/uploads/token/configuration.inf).
+Here we present the breakdown of the configuration file and its constituents. It is to be strictly named `configuration.inf`. A sample file can be found [here](../../uploads/token/configuration.inf).
 
 > **Note:** Lines beginning with a `#` in the configuration file are treated as comments.
 >
@@ -176,7 +176,7 @@ In the next `Queue Count` lines, the headers displayed on the GUI:
 
 The GUI is used to display the allocation to everyone (even the servers) as this is the only output (other than the debug output on the terminal).
 
-![Sample Display](/uploads/token/sample.png)
+![Sample Display](../../uploads/token/sample.png)
 
 The GUI supports up to 12 queues in the form of 2 rows with 6 queues in each. The above image shows a sample with 6 such queues.
 

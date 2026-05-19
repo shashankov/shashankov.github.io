@@ -1,0 +1,4 @@
+{{ $type := .Get "type" | default "info" }}
+<div class="alert-box alert-{{ $type }}">
+  {{ .Inner | markdownify }}
+</div>

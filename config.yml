@@ -18,24 +18,21 @@ menu:
     - name: Teaching
       url: teaching/
       weight: 2
+    - name: Publications
+      url: publications/
+      weight: 3
     - name: Projects
       url: projects/
-      weight: 3
-    - name: Resume
-      url: resume/
       weight: 4
-    - name: Contact
-      url: contact/
-      weight: 5
 
 params:
   description: "Webpage of Shashank Obla, PhD Candidate in Electrical and Computer Engineering at Carnegie Mellon University."
   author: Shashank Obla
   googleAnalyticsID: "G-YYCNHNENMQ"
   DateFormat: "January 2006"
-  defaultTheme: light
+  defaultTheme: dark
   hideFooter: false
-  disableThemeToggle: true
+  disableThemeToggle: false
   ShowShareButtons: false
   ShowReadingTime: false
   disableSpecial1stPost: true
@@ -44,7 +41,7 @@ params:
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   ShowAllPagesInArchive: false
-  MainSections: ["bio", "teaching", "projects"]
+  MainSections: ["bio", "teaching", "publications", "projects"]
   ShowToc: false
   disableScrollToTop: true
   TocOpen: false
@@ -66,12 +63,10 @@ params:
         url: bio/
       - name: Teaching
         url: teaching/
+      - name: Publications
+        url: publications/
       - name: Projects
         url: projects/
-      - name: Resume
-        url: resume/
-      - name: Contact
-        url: contact/
 
   socialIcons:
     - name: Email
@@ -80,19 +75,16 @@ params:
       url: "https://github.com/ShashankOV"
     - name: LinkedIn
       url: "https://www.linkedin.com/in/shashankov"
-    - name: Twitter
-      url: "https://twitter.com/Shashank_OV"
-    - name: CV
-      url: "uploads/resume.pdf"
 
   assets:
+    favicon: rayquaza.png
     disableScrollBarStyle: true
   cover:
     hiddenInList: false
     hiddenInSingle: true
   label:
     text: "Shashank Obla"
-    icon: favicon.ico
+    icon: rayquaza.png
     iconHeight: 18
 
 markup:

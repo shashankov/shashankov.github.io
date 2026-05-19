@@ -2,6 +2,14 @@
 
 Personal academic website built with [Hugo](https://gohugo.io/) and the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme, using [Pascal Michaillat's minimalist academic template](https://github.com/pmichaillat/hugo-website) as the base.
 
+## Repository Branches
+
+This repository contains different versions of the website across the following branches:
+
+- **`main`**: The active website built using **Hugo** and the **PaperMod** theme.
+- **`mkdocs`**: The archive branch containing the previous version of the website built using **MkDocs**.
+- **`hugo-blox`**: An archive branch containing a draft migration built using the **Hugo Blox** (academic) theme.
+
 ## Prerequisites
 
 | Tool | Version | Install |
@@ -34,18 +42,22 @@ hugo server --baseURL http://localhost:1313/
 ```
 ├── config.yml              # All site config (single file)
 ├── content/
-│   ├── _index.md           # Homepage (profileMode from config.yml)
-│   ├── bio/index.md        # Bio page
+│   ├── _index.md           # Homepage profile metadata
+│   ├── bio/index.md        # Bio page content
 │   ├── teaching/_index.md  # Teaching page
 │   ├── projects/           # Projects section
+│   ├── publications/       # Publications section (individual Markdown files)
+│   ├── service/            # Service & community involvement page
 │   ├── resume/index.md     # Resume page (embeds PDF)
 │   └── contact/index.md    # Contact page + calendar
 ├── static/
 │   ├── picture.jpeg        # Profile photo
-│   └── uploads/            # PDFs, images, etc.
-├── layouts/partials/
-│   └── svg.html            # Custom social icons (CV, Google Scholar, etc.)
-└── themes/PaperMod/        # Git submodule
+│   └── uploads/            # PDFs, slides, and other media assets
+├── assets/
+│   └── css/extended/       # Custom user-defined CSS overrides
+├── layouts/
+│   └── partials/           # Customized HTML components and icons (svg.html)
+└── themes/PaperMod/        # Git submodule for the PaperMod theme
 ```
 
 ## Updating the Theme

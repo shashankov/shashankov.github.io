@@ -1,3 +1,11 @@
+:root {
+    --main-width: 960px; /* Increase overall content width */
+}
+
 .profile_inner img {
     object-fit: cover;
+}
+
+.buttons {
+    max-width: 800px; /* Increase width for buttons to prevent early wrapping */
 }

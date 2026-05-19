@@ -25,6 +25,6 @@ This excerpt from an address by Albert Einstein, on the occasion of the celebrat
 
 > **Note:** Though most of the speech focuses on education at the school level, I believe that they still remain relevant for colleges and universities.
 
-I found it hard to find an error-free version of it, and hence I took it upon myself to create a well formatted document for anyone who wishes to find and read it. You can find it below or download it from [here](../../uploads/On_Education_Einstein.pdf).
+I found it hard to find an error-free version of it, and hence I took it upon myself to create a well formatted document for anyone who wishes to find and read it. You can find it below or download it from [here](../../uploads/teaching/On_Education_Einstein.pdf).
 
-<embed src="../../uploads/On_Education_Einstein.pdf" type="application/pdf" width="100%" height="720px" />
+<embed src="../../uploads/teaching/On_Education_Einstein.pdf" type="application/pdf" width="100%" height="720px" />

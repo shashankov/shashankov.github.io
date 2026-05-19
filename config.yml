@@ -1,3 +1,4 @@
+baseURL: "https://www.andrew.cmu.edu/user/sobla/"
 title: Shashank Obla
 theme: PaperMod
 
@@ -32,6 +33,9 @@ params:
   author: Shashank Obla
   hideAuthor: true
   googleAnalyticsID: "G-YYCNHNENMQ"
+  analytics:
+    google:
+      SiteVerificationTag: "Zxx7g4bodyxLNUqWQSsSYNcV11JPb0HWst-X9km2Lzs"
   DateFormat: "January 2006"
   defaultTheme: dark
   hideFooter: false

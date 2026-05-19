@@ -35,7 +35,7 @@ For the 2022 iteration of the course, I worked on porting the Ultra96v2 platform
 
 In this course, I was a part of the team of 7 TAs for a class of around 140 students. The course deals with topics ranging from basic CMOS physics and theory to designing Operational Amplifiers and Filters. Through this, I got an opportunity to take tutorial sessions, set assignments, grade examinations, take vivas and most importantly interact with students to clear their doubts and difficulties. It was during this engagement that I developed the [Token System](/projects/token-system/).
 
-The assignment was an ambitious project for me. I chose to deconstruct a research paper with the goal that I wanted to make an assignment which I would've enjoyed doing! You can find the assignment [here](../uploads/Assignment_2.pdf).
+The assignment was an ambitious project for me. I chose to deconstruct a research paper with the goal that I wanted to make an assignment which I would've enjoyed doing! You can find the assignment [here](../uploads/teaching/Assignment_2.pdf).
 
 > M. G. Degrauwe, J. Rijmenants, E. A. Vittoz and H. J. De Man, "Adaptive biasing CMOS amplifiers," in IEEE Journal of Solid-State Circuits, vol. 17, no. 3, pp. 522-528, June 1982.
 >

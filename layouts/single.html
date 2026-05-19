@@ -3,7 +3,7 @@
 <article class="post-single">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
-    <h1 class="post-title entry-hint-parent" {{- if eq .Section "publications" }} style="font-size: 1.8rem;"{{- end }}>
+    <h1 class="post-title entry-hint-parent" {{- if eq .Section "publications" }} style="font-size: 1.9rem;"{{- end }}>
       {{ .Title }}
       {{- if .Draft }}
       <span class="entry-hint" title="Draft">
@@ -18,7 +18,7 @@
     <div style="font-weight: normal; font-size: 0.7em; margin-top: 6px; color: var(--secondary);">{{ .Params.subtitle }}</div>
     {{- end }}
     {{- if and (eq .Section "publications") .Params.authors }}
-    <div class="alfolio-authors" style="font-size: 0.95rem; margin-top: 8px;">{{ range $i, $a := .Params.authors }}{{- if $i }}, {{ end }}{{- if eq $a "Shashank Obla" }}<strong>{{ $a }}</strong>{{- else }}{{ $a }}{{- end }}{{- end }}</div>
+    <div class="alfolio-authors" style="font-size: 1.03rem; margin-top: 8px;">{{ range $i, $a := .Params.authors }}{{- if $i }}, {{ end }}{{- if eq $a "Shashank Obla" }}<strong>{{ $a }}</strong>{{- else }}{{ $a }}{{- end }}{{- end }}</div>
     {{- end }}
     {{- if .Description }}
     <div class="post-description">

@@ -125,7 +125,7 @@
     {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
     {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
     <header class="entry-header">
-      <h2 class="entry-hint-parent" {{- if eq .Section "publications" }} style="font-size: 1.25rem;" {{- end }}>
+      <h2 class="entry-hint-parent" {{- if eq .Section "publications" }} style="font-size: 1.33rem;" {{- end }}>
         {{- .Title }}
         {{- if .Draft }}
         <span class="entry-hint" title="Draft">

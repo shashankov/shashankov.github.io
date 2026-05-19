@@ -9,7 +9,7 @@
 
 /* Section title */
 .alfolio-section-title {
-    font-size: 1.3rem;
+    font-size: 1.38rem;
     font-weight: 600;
     margin: 1.5rem 0 0.5rem 0;
     color: var(--primary);
@@ -39,7 +39,7 @@
 
 /* Title as a simple link */
 .alfolio-title {
-    font-size: 0.95rem;
+    font-size: 1.03rem;
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: 2px;
@@ -57,7 +57,7 @@
 
 /* Venue / description line */
 .alfolio-venue {
-    font-size: 0.85rem;
+    font-size: 0.93rem;
     color: var(--secondary);
     font-style: italic;
     margin-bottom: 6px;
@@ -65,7 +65,7 @@
 
 /* Authors line */
 .alfolio-authors {
-    font-size: 0.85rem;
+    font-size: 0.93rem;
     color: var(--secondary);
     margin-bottom: 2px;
     line-height: 1.5;
@@ -85,9 +85,9 @@
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    padding: 2px 8px;
+    padding: 2px 9px;
     border-radius: 3px;
-    font-size: 0.72rem;
+    font-size: 0.8rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.3px;
@@ -112,7 +112,7 @@
 
 /* Year column — large, light, right-aligned */
 .alfolio-year {
-    font-size: 1.6rem;
+    font-size: 1.68rem;
     font-weight: 300;
     color: var(--secondary);
     opacity: 0.5;

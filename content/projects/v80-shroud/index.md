@@ -29,7 +29,7 @@ The shroud's geometry fits precisely around the V80's physical profile, directin
 ![3D Model Render](../../uploads/projects/v80_shroud/3d_model.png)
 *3D render of the fan shroud.*
 
-* **Download 3D Model:** [v80_side_golden_usb_fixed.STL](../../uploads/projects/v80_shroud/v80_side_golden_usb_fixed.STL)
+* **Download 3D Model:** [v80_side_golden_usb_fixed.STL](../../uploads/projects/v80_shroud/v80_side_golden_usb_fixed.STL) (also available on [Thingiverse](https://www.thingiverse.com/thing:7355999))
 
 ---
 

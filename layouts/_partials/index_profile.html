@@ -74,10 +74,30 @@
 
 <!-- Main homepage content container below the profile hero screen -->
 <div id="home-content" class="home-content-container">
+    <!-- News Section -->
+    {{- if $.Params.news }}
+    <div class="alfolio-section home-news" style="margin-top: 0; border-top: none; padding-top: 0; margin-bottom: 2rem;">
+        <h3 class="alfolio-section-title">News</h3>
+        <hr class="alfolio-divider">
+        <div class="news-list" style="margin-top: 1rem;">
+            {{- range $.Params.news }}
+            <div class="news-item" style="display: flex; gap: 15px; margin-bottom: 12px; font-size: 0.95rem; align-items: flex-start; line-height: 1.5;">
+                <div class="news-date" style="flex-shrink: 0; font-weight: 600; width: 100px; color: var(--secondary);">
+                    {{ .date }}
+                </div>
+                <div class="news-content" style="flex-grow: 1; color: var(--primary);">
+                    {{ .content | markdownify }}
+                </div>
+            </div>
+            {{- end }}
+        </div>
+    </div>
+    {{- end }}
+
     <!-- Render Selected Publications dynamically from your main publications -->
     {{- $selected_pubs := where (where site.RegularPages "Section" "publications") "Params.selected" true }}
     {{- if $selected_pubs }}
-    <div class="alfolio-section home-selected-publications" style="margin-top: 0; border-top: none; padding-top: 0;">
+    <div class="alfolio-section home-selected-publications" {{- if $.Params.news }} style="margin-top: 2rem; border-top: 1px solid var(--border); padding-top: 2rem;" {{- else }} style="margin-top: 0; border-top: none; padding-top: 0;" {{- end }}>
         <h3 class="alfolio-section-title">Selected Publications</h3>
         <hr class="alfolio-divider">
         {{- range $selected_pubs }}

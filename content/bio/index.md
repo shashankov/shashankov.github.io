@@ -1,6 +1,6 @@
 ---
 title: Bio
-description: About Shashank Obla — research interests, work experience, and hobbies
+description: About me — research interests, work experience, and hobbies
 ---
 
 I am a computer architecture researcher with comprehensive cross-stack experience, from custom digital tapeouts to datacenter-scale stochastic modeling and machine learning. My work specializes in the design and optimization of heterogeneous reconfigurable systems across networking, security, and database analytics workloads.

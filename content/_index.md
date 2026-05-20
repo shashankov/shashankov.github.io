@@ -1,5 +1,8 @@
 ---
 title: "Shashank Obla"
+news:
+  - date: "May 2026"
+    content: "Had a great time attending [FCCM 2026](https://fccm.org/). I presented our work on using the BoostX NIC for log monitoring at the [MangoBoost](https://mangoboost.github.io/) tutorial, won 3rd place at the Reconfigurable Computing Challenge for our work on [RapidScan](publications/rapidscan-fccm-rcc/), and presented our [poster on RapidQ](publications/rapidq-fccm-poster)!"
 ---
 
 <div class="job-market-box">

@@ -18,6 +18,7 @@
 .profile-content a,
 .profile_inner span a,
 .entry-content a,
+.news-content a,
 .post-description a {
     color: #1e3a8a !important; /* dark blue */
     font-weight: bold !important;
@@ -30,6 +31,7 @@
 .profile-content a:hover,
 .profile_inner span a:hover,
 .entry-content a:hover,
+.news-content a:hover,
 .post-description a:hover {
     color: #1e40af !important; /* slightly brighter dark blue on hover */
 }
@@ -39,6 +41,7 @@
 [data-theme="dark"] .profile-content a,
 [data-theme="dark"] .profile_inner span a,
 [data-theme="dark"] .entry-content a,
+[data-theme="dark"] .news-content a,
 [data-theme="dark"] .post-description a {
     color: #5c8cbc !important; /* subdued, slightly dark blue for dark mode */
 }
@@ -47,6 +50,7 @@
 [data-theme="dark"] .profile-content a:hover,
 [data-theme="dark"] .profile_inner span a:hover,
 [data-theme="dark"] .entry-content a:hover,
+[data-theme="dark"] .news-content a:hover,
 [data-theme="dark"] .post-description a:hover {
     color: #7ba8d6 !important; /* slightly lighter on hover */
 }
@@ -114,5 +118,18 @@
     font-size: 1.0rem !important;
     margin-top: 12px !important;
     margin-bottom: 6px !important;
+}
+
+/* Custom styling for news section list formatting */
+.news-content p {
+    margin-bottom: 0.25rem;
+}
+.news-content ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    list-style-type: disc;
+}
+.news-content li {
+    margin-bottom: 0.15rem;
 }
 

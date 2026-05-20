@@ -55,7 +55,7 @@ params:
   ShowWordCount: false
   UseHugoToc: true
   comments: false
-  math: false
+  math: true
 
   profileMode:
     enabled: true
@@ -100,6 +100,20 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - - '$$'
+              - '$$'
+            - - '\['
+              - '\]'
+          inline:
+            - - '$'
+              - '$'
+            - - '\('
+              - '\)'
   highlight:
     guessSyntax: true
     style: autumn

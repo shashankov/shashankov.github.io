@@ -1,6 +1,6 @@
 ---
 title: "FPGA-Optimized Network-on-Chip (NoC)"
-description: "A highly-parametrizable, high-performance Network-on-Chip (NoC) in SystemVerilog optimized for FPGAs, supporting multiple topologies and credit-based flow control."
+description: "A highly parameterizable, high-performance Network-on-Chip (NoC) in SystemVerilog optimized for FPGAs, supporting multiple topologies and credit-based flow control."
 date: 2025-01-01
 tags:
   - Network-on-Chip
@@ -8,7 +8,7 @@ tags:
 code: "https://github.com/shashankov/noc"
 ---
 
-The **FPGA-Optimized Network-on-Chip (NoC)** is a highly-parametrizable, high-performance soft network-on-chip designed to be customizable to the needs of the application while being resource-minimal. Written directly in SystemVerilog (RTL), the NoC is specially optimized for high-frequency operations on Intel FPGA architectures (such as Intel Agilex 7) and operates at frequencies exceeding **500 MHz**. While the repository does not provide FIFO IPs for AMD FPGAs, it is designed such that they can be easily replaced with equivalent IPs (see the [Porting to AMD FPGAs](#porting-to-amd-fpgas) section below).
+The **FPGA-Optimized Network-on-Chip (NoC)** is a highly parameterizable, high-performance soft network-on-chip designed to be customizable to the needs of the application while being resource-minimal. Written directly in SystemVerilog (RTL), the NoC is specially optimized for high-frequency operations on Intel FPGA architectures (such as Intel Agilex 7) and operates at frequencies exceeding **500 MHz**. While the repository does not provide FIFO IPs for AMD FPGAs, it is designed such that they can be easily replaced with equivalent IPs (see the [Porting to AMD FPGAs](#porting-to-amd-fpgas) section below).
 
 > **GitHub Repository:** [shashankov/noc](https://github.com/shashankov/noc)
 
@@ -16,8 +16,8 @@ The **FPGA-Optimized Network-on-Chip (NoC)** is a highly-parametrizable, high-pe
 
 ## Real-World Applications & Validation
 
-This open-sourced NoC has been rigorously validated and integrated into complex, state-of-the-art academic and industry research frameworks:
-* **64 GBps Streaming Group-by Aggregation Pipeline**: Used as the primary interconnect fabric for hash-based tuple partitioning on a single FPGA, achieving high-throughput for input-dependent database analytics acceleration.
+This open-source NoC has been rigorously validated and integrated into complex, state-of-the-art academic and industry research frameworks:
+* **64 GBps Streaming Group-by Aggregation Pipeline**: Used as the primary interconnect fabric for hash-based tuple partitioning on a single FPGA, achieving high throughput for input-dependent database analytics acceleration.
 * **NoC-based OpenFPGA**: Adopted by other hardware design and research groups to power the interconnect topology of next-generation OpenFPGA architectures (see the paper: [OpenFPGA-NoC: Automated Fabric and Bitstream Generation for NoC-based FPGAs](https://doi.org/10.1145/3779449)).
 
 ---
@@ -29,7 +29,7 @@ This open-sourced NoC has been rigorously validated and integrated into complex,
 * **Virtual Links Support**: Guarantees that active packets are never interrupted, preventing deadlocks and maintaining link integrity.
 * **Full Crossbar Support**: Embedded inside the router to enable parallel, collision-free routing paths between non-conflicting inputs and outputs.
 * **AXI-Stream Interface Wrapper**: Provides native wrappers to transition the credit-based NoC ports into a standard AXI-Stream interface.
-* **Clock Domain Crossing & Width Conversion**: Fully supports mixed widths and asymmetric clock domains using highly-optimized Agilex 7 Asynchronous FIFOs.
+* **Clock Domain Crossing & Width Conversion**: Fully supports mixed widths and asymmetric clock domains using highly optimized Agilex 7 Asynchronous FIFOs.
 
 ---
 
@@ -69,7 +69,7 @@ To support arbitrary network structures and load balancing, the project features
 
 ## AXI-Stream Integration & Shims
 
-To bridge the NoC's internal credit-based protocol and standard system buses, the repository provides AXI-Stream interface wrappers (`axis_mesh.sv`, `axis_torus.sv`, etc.) along with specialized serialization shims. These shims support **clock-crossing** and the associated **data-width conversion** allowing the NoC to run at a higher frequency from the application logic.
+To bridge the NoC's internal credit-based protocol and standard system buses, the repository provides AXI-Stream interface wrappers (`axis_mesh.sv`, `axis_torus.sv`, etc.) along with specialized serialization shims. These shims support **clock-crossing** and the associated **data-width conversion**, allowing the NoC to run at a higher frequency than the application logic.
 * **`axis_serializer_shim_in`**: Deserializes high-speed incoming data streams into the credit-based internal NoC interface.
 * **`axis_deserializer_shim_out`**: Adapts internal NoC credit-controlled output ports into compliant AXI-Stream signals.
 * **Intel Agilex Dual-Clock FIFOs (`dcfifo_agilex7.sv`)**: Integrates directly with Agilex-specific RAM structures to implement low-latency clock crossing and word width translation.

@@ -8,24 +8,24 @@ tags:
 code: "https://github.com/ShashankOV/Token-System"
 ---
 
-The token system implements a queue-based allocation system for handling customers with requests in a [FCFS](https://en.wikipedia.org/wiki/Scheduling_(computing)#First_come,_first_served) (First Come, First Served) manner. The motivation behind this code was to streamline the answer sheet grading doubt session or, as it is called here in IIT Bombay, the `"Crib Session"`, for the course in which I am a Teaching Assistant.
+The token system implements a queue-based allocation system for handling customers with requests in a [FCFS](https://en.wikipedia.org/wiki/Scheduling_(computing)#First_come,_first_served) (First Come, First Served) manner. The motivation behind this code was to streamline the answer sheet grading doubt session, or, as it is called at IIT Bombay, the `"Crib Session"`, for the course in which I was a Teaching Assistant.
 
 ## Dependencies
 
 ### Google Forms
 
-The project, to facilitate ease of access on the clients' (Students) and the servers' (Teaching Assistants), uses [Google Forms](https://docs.google.com/forms/u/0/) to supply the input data stream. To use Google Forms, the user of the code must have access to Google Forms and hence also must have a [Google Account](https://account.google.com/).
+To facilitate ease of access for both clients (students) and servers (teaching assistants), the project uses [Google Forms](https://docs.google.com/forms/u/0/) to supply the input data stream. To use Google Forms, the user of the code must have access to Google Forms and therefore must also have a [Google Account](https://account.google.com/).
 
 ### Operating System
 
-The project has been written in [Python3](https://www.python.org/) and compiled into a standalone executable using [PyInstaller 3.4](https://pyinstaller.readthedocs.io/en/stable/) and tested on two systems:
+The project has been written in [Python 3](https://www.python.org/) and compiled into a standalone executable using [PyInstaller 3.4](https://pyinstaller.readthedocs.io/en/stable/) and tested on two systems:
 
 * Ubuntu 18.04.1
 * Windows 10
 
-> **Note:** For Linux based systems, the python executable depends on linking of some libraries which may require latest packages available on the said systems. The source code is available for those who would like to use or build the program from source.
+> **Note:** For Linux-based systems, the Python executable depends on the linking of some libraries, which may require the latest packages available on those systems. The source code is available for those who would like to use or build the program from source.
 
-Also for Ubuntu systems, updates can be performed as:
+Additionally, for Ubuntu systems, updates can be performed using:
 
 ```bash
 sudo apt update
@@ -34,15 +34,15 @@ sudo apt upgrade
 
 ## Setup
 
-The program along with the `credentials.json` file which is required to connect to the Google Sheets API and a sample configuration file can be found in release hosted on Github:
+The program, along with the `credentials.json` file required to connect to the Google Sheets API and a sample configuration file, can be found in the release hosted on GitHub:
 
 > [Release Version 1.0](https://github.com/ShashankOV/Token-System/releases/tag/v1.0)
 
-The `tar.gz` version is for Linux while `.zip` for Windows.
+The `tar.gz` archive is for Linux, while the `.zip` archive is for Windows.
 
-> **Note:** The first time you run the program, you'll have to login to your Google ID to provide the program access to read your Google Sheets.
+> **Note:** The first time you run the program, you will have to log in using your Google ID to provide the program access to read your Google Sheets.
 
-> **Warning:** Note that the archives don't have a sub-folder and hence extracting releases all the contents into the current directory.
+> **Warning:** Note that the archives do not contain a subfolder, so extracting them will release all contents into the current directory.
 
 ### Linux
 
@@ -71,26 +71,26 @@ Extract the ZIP archive into a folder and run `generic.exe`
 
 To ensure that the input methods are compatible with the program, the forms and their sheets must adhere to some guidelines which are listed here.
 
-### Students Side GForm
+### Student-Side Google Form
 
 The important rules for this are:
 
-1. The ID, Name and Queue Selection Questions must be one after the other without fail (Can be preceded and succeeded by any format of questions)
-2. ID Question must be a required question
-3. The Queue Selection
-    1. Must be based on the checkbox system and
-    2. Every option must begin with a unique number
+1. The ID, Name, and Queue Selection questions must be ordered sequentially (and can be preceded or followed by questions of any other format).
+2. The ID question must be marked as required.
+3. The Queue Selection question:
+    1. Must use checkboxes, and
+    2. Every option must begin with a unique number.
 
 A sample form is shown below:
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqyjF8qKveCDhlO2LhJgxaq0l9LqOJr9rRSMOZsrWcEFBNdA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
-### Servers (TAs) Side GForm
+### Server-Side (TA) Google Form
 
 The important rules for this are:
 
-1. The first question must be about the ID of the server (Succeeding questions do not matter)
-2. The question must a Radio-Button kind MCQ with each option beginning with a unique id
+1. The first question must ask for the ID of the server (subsequent questions do not matter).
+2. The question must be a multiple-choice question (MCQ) of the radio-button type, with each option beginning with a unique ID.
 
 A sample form is shown below:
 
@@ -98,13 +98,13 @@ A sample form is shown below:
 
 ### Integrating with Google Sheets
 
-The responses of both the forms must be directed to a single spreadsheet in different sheets (within the same spreadsheet). The ID of this spreadsheet and the names of the sheets need to be mentioned in the configuration file for the program to read.
+The responses from both forms must be directed to separate sheets within a single spreadsheet. The ID of this spreadsheet and the names of the individual sheets must be specified in the configuration file.
 
 ---
 
 ## Configuration File
 
-Here we present the breakdown of the configuration file and its constituents. It is to be strictly named `configuration.inf`. A sample file can be found [here](../../uploads/projects/token/configuration.inf).
+Here is the breakdown of the configuration file and its constituents. It must be named exactly `configuration.inf`. A sample file can be found [here](../../uploads/projects/token/configuration.inf).
 
 > **Note:** Lines beginning with a `#` in the configuration file are treated as comments.
 >
@@ -112,7 +112,7 @@ Here we present the breakdown of the configuration file and its constituents. It
 > # Example: This is a comment
 > ```
 
-> **Warning:** The ordering of the lines must be strictly followed as there is no other way that the program identifies the meaning of the data provided other than the spatial location with respect to the other elements.
+> **Warning:** The line ordering must be strictly followed, as the program relies on spatial positioning relative to other elements to identify the meaning of the data.
 
 ### Line Format
 
@@ -183,5 +183,5 @@ The GUI supports up to 12 queues in the form of 2 rows with 6 queues in each. Th
 |---------|-------------|---------------------------------------------------|
 | Row 1   | Headers     | Queue names obtained from the configuration file  |
 | Row 2   | ID          | Students' Unique Roll Number/ID                   |
-| Row 3   | Name        | Students' Name or anything other parameter        |
+| Row 3   | Name        | Students' Name or any other parameter             |
 | Row 4   | Queue Size  | Number of waiting requests                        |

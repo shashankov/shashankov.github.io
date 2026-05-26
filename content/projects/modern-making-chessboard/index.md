@@ -1,6 +1,6 @@
 ---
 title: "Transcribing Chess Board"
-description: "An electronic chess board that transcribes physical piece locations and transmits them to a PC, built for Intro to Modern Making course at CMU."
+description: "An electronic chessboard that transcribes physical piece locations and transmits them to a PC, built for the Intro to Modern Making course at CMU."
 date: 2024-02-23
 tags:
   - Arduino
@@ -10,7 +10,7 @@ tags:
   - Embedded Systems
 ---
 
-We designed and built an **transcribing chessboard** that electronically detects the locations of chess pieces and transmits the coordinates to a computer for processing. Our goal was to implement a low-cost system using only basic electronics without the need for expensive cameras or image processing to read the state of the chess board. Built as part of **24-104: Intro to Modern Making**, the initial project scope included both piece detection and an under-square LED array to highlight legal moves, opponent moves, or suggestions from a chess engine. However, due to time constraints, we focused our efforts on the core transcription system.
+We designed and built a **transcribing chessboard** that electronically detects the locations of chess pieces and transmits the coordinates to a computer for processing. Our goal was to implement a low-cost system using only basic electronics without the need for expensive cameras or image processing to read the state of the chessboard. Built as part of **24-104: Intro to Modern Making**, the initial project scope included both piece detection and an under-square LED array to highlight legal moves, opponent moves, or suggestions from a chess engine. However, due to time constraints, we focused our efforts on the core transcription system.
 
 ![Transcribing Chess Board](../../uploads/projects/modern_making_chessboard/demo.jpg)
 *The final assembled transcribing chess board.*

@@ -3,7 +3,7 @@ title: "Pigasus 2.0: Making the Pigasus IDS Robust to Attacks and Different Work
 date: 2022-10-25
 authors: ["Zhipeng Zhao", "Nirav Atre", "Hugo Sadok", "Siddharth Sahay", "Shashank Obla", "James C. Hoe", "Justine Sherry"]
 description: "Demo, SIGCOMM 2022"
-html: "https://dl.acm.org/doi/abs/10.1145/3546037.3546065"
+doi: "10.1145/3546037.3546065"
 selected: true
 ---
 

@@ -7,6 +7,7 @@ pdf: "uploads/publications/FCCM_RCC_2026.pdf"
 poster: "uploads/publications/RCC_FCCM_Poster.pdf"
 slides: "uploads/publications/RapidScan_FCCM_RCC_Lightning_animation_split.pdf"
 code: "https://github.com/pigasus-hls/RapidDetect-RCC"
+doi: "10.1109/FCCM68464.2026.00079"
 selected: true
 ---
 

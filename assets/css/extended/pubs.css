@@ -295,17 +295,16 @@ html {
    Standout Styling for Projects Page Code Button (Dark Theme Only)
    ============================================ */
 
-[data-theme="dark"] .project-links .pub-links .pub-btn-code,
-[data-theme="dark"] .project-links .pub-links .pub-btn-stl {
+[data-theme="dark"] .project-links .pub-links .pub-btn {
     background-color: #424247; /* Slightly lighter solid grey for outstanding card contrast */
     border-color: #7a7a80; /* A clearly defined lighter border */
     color: #ffffff !important; /* Premium high-contrast white text */
 }
 
-[data-theme="dark"] .project-links .pub-links .pub-btn-code:hover,
-[data-theme="dark"] .project-links .pub-links .pub-btn-stl:hover {
+[data-theme="dark"] .project-links .pub-links .pub-btn:hover {
     background-color: #55555c; /* Even lighter grey highlight on hover */
     border-color: #9b9ba2;
     color: #ffffff !important;
 }
+
 

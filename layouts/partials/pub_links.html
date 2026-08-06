@@ -54,4 +54,18 @@
     STL
   </a>
   {{ end }}
+
+  {{ $non_links := slice "title" "date" "authors" "description" "category" "tags" "news" "draft" "publishdate" "expirydate" "weight" "slug" "aliases" "type" "layout" "summary" "showtoc" "toc" "author" "images" "image" "subtitle" "ispage" "url" "outputs" "inputs" "resources" "headless" "linktitle" "translationkey" }}
+  {{ $hardcoded := slice "pdf" "html" "doi" "code" "slides" "poster" "video" "stl" }}
+  {{ range $key, $val := .Params }}
+    {{ if and (not (in $non_links $key)) (not (in $hardcoded $key)) }}
+      {{ if and (eq (printf "%T" $val) "string") (ne $val "") }}
+      <a href="{{ $val | relURL }}" target="_blank" class="pub-btn pub-btn-{{ $key }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+        {{ $key | upper }}
+      </a>
+      {{ end }}
+    {{ end }}
+  {{ end }}
 </div>
+

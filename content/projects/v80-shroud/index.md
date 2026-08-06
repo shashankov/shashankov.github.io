@@ -9,6 +9,7 @@ tags:
   - V80
   - FPGA
 stl: "uploads/projects/v80_shroud/v80_side_golden_usb_fixed.STL"
+sldprt: "uploads/projects/v80_shroud/v80_shroud.SLDPRT"
 ---
 
 Active cooling is essential on production-ready platforms like the AMD Versal V80 which can consume close to 200W of power under full load. Although it is recommended to only run the V80 in a server system with appropriate cooling, academics like me might not always have quick access to such systems. This project provides a custom 3D-printable active cooling fan shroud designed to attach an 80mm fan directly to the V80 board, ensuring optimal airflow across the board's heatsink.
@@ -29,7 +30,7 @@ The shroud's geometry fits precisely around the V80's physical profile, directin
 ![3D Model Render](../../uploads/projects/v80_shroud/3d_model.png)
 *3D render of the fan shroud.*
 
-* **Download 3D Model:** [v80_side_golden_usb_fixed.STL](../../uploads/projects/v80_shroud/v80_side_golden_usb_fixed.STL) (also available on [Thingiverse](https://www.thingiverse.com/thing:7355999))
+* **Download 3D Model:** [v80_side_golden_usb_fixed.STL](../../uploads/projects/v80_shroud/v80_side_golden_usb_fixed.STL) / [v80_shroud.SLDPRT](../../uploads/projects/v80_shroud/v80_shroud.SLDPRT) (also available on [Thingiverse](https://www.thingiverse.com/thing:7355999))
 
 ---
 

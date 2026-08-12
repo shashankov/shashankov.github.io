@@ -14,10 +14,10 @@ I am a computer architecture researcher with comprehensive cross-stack experienc
     <div style="width: 100%;">
         <div style="display: flex; justify-content: space-between; align-items: start; width: 100%;">
             <strong style="font-size: 1.15rem;">Carnegie Mellon University</strong>
-            <span style="font-size: 0.95rem; font-style: italic; color: #6c757d; white-space: nowrap; margin-left: 15px; margin-top: 2px;">2019 - 2026 (Expected)</span>
+            <span style="font-size: 0.95rem; font-style: italic; color: #6c757d; white-space: nowrap; margin-left: 15px; margin-top: 2px;">2019 - 2026</span>
         </div>
-        <div style="font-size: 1.0rem; margin-top: 2px;">Ph.D. Candidate, Electrical and Computer Engineering (GPA: 3.97/4.0)</div>
-        <div style="font-size: 0.95rem; color: #6c757d; margin-top: 2px;">Thesis: Design and Optimization of Input-Dependent Streaming Pipelines on FPGAs &middot; Advisor: Prof. James Hoe</div>
+        <div style="font-size: 1.0rem; margin-top: 2px;">Ph.D., Electrical and Computer Engineering (GPA: 3.97/4.0)</div>
+        <div style="font-size: 0.95rem; color: #6c757d; margin-top: 2px;">Thesis: Accelerating Input-Dependent Streaming Applications on FPGAs &middot; Advisor: Prof. James Hoe</div>
         <div style="font-size: 0.95rem; color: #6c757d; margin-top: 2px;"><i class="fas fa-award text-warning"></i> Dean’s Fellowship</div>
     </div>
 </div>
@@ -39,7 +39,7 @@ I am a computer architecture researcher with comprehensive cross-stack experienc
 
 ## Current Research at CMU
 
-I am currently a Ph.D. Candidate in the Electrical and Computer Engineering Department at Carnegie Mellon University, advised by Prof. James Hoe. My thesis focuses on the **Design and Optimization of Input-Dependent Streaming Pipelines on FPGAs**.
+I received my Ph.D. from the Electrical and Computer Engineering Department at Carnegie Mellon University, advised by Prof. James Hoe. My thesis focused on **Accelerating Input-Dependent Streaming Applications on FPGAs**.
 
 My major research projects include:
 

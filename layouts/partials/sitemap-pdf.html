@@ -1,0 +1,17 @@
+{{- $dir := .dir -}}
+{{- $path := .path -}}
+{{- range readDir $dir -}}
+  {{- $itemPath := printf "%s/%s" $dir .Name -}}
+  {{- $relPath := .Name -}}
+  {{- if $path -}}
+    {{- $relPath = printf "%s/%s" $path .Name -}}
+  {{- end -}}
+  {{- if .IsDir -}}
+    {{- partial "sitemap-pdf.html" (dict "dir" $itemPath "path" $relPath) -}}
+  {{- else if (hasSuffix (lower .Name) ".pdf") }}
+  <url>
+    <loc>{{ $relPath | absURL }}</loc>
+    <lastmod>{{ .ModTime.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
+  </url>
+  {{- end -}}
+{{- end -}}

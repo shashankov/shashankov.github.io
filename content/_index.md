@@ -7,6 +7,7 @@ news:
     content: "Had a great time attending [FCCM 2026](https://fccm.org/). I presented our work on using the BoostX NIC for log monitoring at the [MangoBoost](https://mangoboost.github.io/) tutorial, won 3rd place at the Reconfigurable Computing Challenge for our work on [RapidScan](publications/rapidscan-fccm-rcc/), and presented our [poster on RapidQ](publications/rapidq-fccm-poster)!"
 ---
 
-I am a final-year PhD Candidate in the Electrical and Computer Engineering Department at [Carnegie Mellon University](https://www.cmu.edu/), advised by [Prof. James Hoe](http://users.ece.cmu.edu/~jhoe/doku/doku.php). My research interests lie in designing sustainable and programmable accelerators for datacenter-scale computing, alongside the abstractions necessary to model and optimize applications running on them.  
+I received my PhD in Electrical and Computer Engineering from [Carnegie Mellon University](https://www.cmu.edu/), advised by [Prof. James Hoe](http://users.ece.cmu.edu/~jhoe/doku/doku.php). My research interests lie in designing sustainable and programmable accelerators for datacenter-scale computing, alongside the abstractions necessary to model and optimize applications running on them.  
 <br>
 [Read my Research Statement](uploads/resume/shashank_obla_research_statement.pdf) | [View my Resume](uploads/resume/shashank_obla_resume.pdf)
+

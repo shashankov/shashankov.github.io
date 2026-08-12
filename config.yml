@@ -29,7 +29,7 @@ menu:
       weight: 5
 
 params:
-  description: "Webpage of Shashank Obla, PhD Candidate in Electrical and Computer Engineering at Carnegie Mellon University."
+  description: "Webpage of Shashank Obla, PhD in Electrical and Computer Engineering from Carnegie Mellon University."
   author: Shashank Obla
   hideAuthor: true
   googleAnalyticsID: "G-YYCNHNENMQ"
